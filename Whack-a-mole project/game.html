@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game">
+      
+        <div class="board">
+            <div class="hole" ></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+
+        <div class="game-over">
+            <h3>Game Over!</h3>
+            <p>Final Score: <span class="final-score">0</span></p>
+            <button class="restart">Restart</button>
+        </div>
+        <div class="game-paused">
+            <h3>Game Paused</h3>
+            <p>Press space to continue</p>
+        </div>
+        <div class="scorndiff">
+            
+            <div class="score">
+                <h2>Score</h2>
+                <h3>00</h3>
+             </div>
+
+            <div class="difficulty">
+                <h2>Difficulty</h2>
+                <label>
+                    <input type="radio" name="difficulty" value="easy" checked> Easy
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="medium"> Medium
+                </label>
+                <label>
+                    <input type="radio" name="difficulty" value="hard"> Hard
+                </label>
+            </div>
+        </div>
+
+        <div class="cursor"></div>
+       
+        
+    </div>
+    
+    <!--Linking Javascript file-->
+    <script src="main.js"></script>
+
+</body>
+</html>

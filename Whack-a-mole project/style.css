@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body,html{
+   
+    height:100%;
+    width:100%;
+
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('bg2purple.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    height: 90%;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(7, 8, 67, 0.653);
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.home img{
+    height: 70%;
+    
+}
+
+.home button{
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(23, 162, 10);
+    box-shadow: 3px 6px 5px 5px rgb(2, 5, 44);
+}
+
+.home button:hover{
+    background-color: rgb(15, 102, 15);
+}
+
+.home #hammerimg{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 15vw;
+    right: 10vw;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%,100%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+
+.home #moleimg{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 10vw;
+    left: 8vw;
+    animation: rise 3s ease-out infinite ;
+}
+.home #molesmashimg{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 7vw;
+    left: 17vw;
+    animation: rise2 3s ease-out infinite;
+    filter: brightness(90%);
+}
+
+@keyframes rise {
+    0%,100%{
+        bottom: 10vw;
+    }
+    50%{
+        bottom: 7vw;
+    }
+    
+}
+@keyframes rise2 {
+    0%,100%{
+        bottom: 7vw;
+    }
+    50%{
+        bottom: 10vw;
+    }
+    
+}
+    
